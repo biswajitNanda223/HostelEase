@@ -1,0 +1,82 @@
+.dashboard {
+  height: 100vh;
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+.dashboard.dark-mode {
+  background-color: #1e1e2f;
+  color: #f8f9fa;
+}
+
+.sidebar {
+  background-color: #343a40;
+  color: white;
+  min-height: 100vh;
+  border-right: 2px solid #dee2e6;
+}
+
+.sidebar .nav-link-custom {
+  padding: 10px 15px;
+  color: #cfd8dc;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  border-radius: 4px;
+  margin-bottom: 6px;
+}
+
+.sidebar .nav-link-custom:hover,
+.sidebar .nav-link-custom.active {
+  background-color: #495057;
+  color: #ffffff;
+}
+
+
+
+.card {
+  background-color: inherit;
+  border: 1px solid #dee2e6;
+  color: inherit;
+
+}
+
+.mess-menu-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.mess-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.menu-day {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-day-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #002b5b;
+}
+
+.menu-item {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.menu-item span {
+  font-weight: normal;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .mess-menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
