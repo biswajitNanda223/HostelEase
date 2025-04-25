@@ -37,7 +37,7 @@ const LeaveRequests = () => {
             <tr key={req.id}>
               <td>{req.name}</td>
               <td>{req.reason}</td>
-              <td>{req.date}</td>
+              <td>from-({req.fromDate})-to-({req.toDate})</td>
               <td>{req.status}</td>
               <td>
                 {req.status === "Pending" && (
